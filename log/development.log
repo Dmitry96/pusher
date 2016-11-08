@@ -910,3 +910,20 @@ Processing by MessagesController#index as HTML
   Rendered messages/_form.html.erb (3.1ms)
   Rendered messages/index.html.erb within layouts/application (80.4ms)
 Completed 200 OK in 360ms (Views: 283.0ms | ActiveRecord: 59.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-08 19:37:12 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.3ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered messages/_form.html.erb (55.2ms)
+  Rendered messages/index.html.erb within layouts/application (78.4ms)
+Completed 200 OK in 558ms (Views: 519.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-08 19:37:13 +0200
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.4ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/_form.html.erb (2.9ms)
+  Rendered messages/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 81ms (Views: 79.4ms | ActiveRecord: 0.4ms)
